@@ -1,0 +1,50 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:stalker",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:behavior": {
+        "minecraft:behavior.look_at_player": {
+          "priority": 1,
+          "look_distance": 10,
+          "probability": 0.02
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 2,
+          "speed_multiplier": 1.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:navigation.walk": {
+        "avoid_damage_blocks": true,
+        "avoid_sun": true
+      }
+    },
+    "events": {
+      "minecraft:on_spawn": {
+        "add": {
+          "component_groups": [
+            "minecraft:behavior"
+          ]
+        }
+      }
+    }
+  }
+}

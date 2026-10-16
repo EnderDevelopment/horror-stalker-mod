@@ -1,0 +1,25 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:stalker_block",
+      "properties": {
+        "minecraft:direction": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.stalker_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "block",
+          "render_method": "opaque"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+[[mods]]
+modId="stalkermod"
+displayName="Stalker Mod"
+version="${file.jarVersion}"
+credits="Created using Minecraft Forge"
+authors="Your Name"
+description='''
+A horror mod featuring a mob called The Stalker with 50-degree field-of-view detection, jumpscare mechanics, escape mechanic, and 5 AI states.
+'''
+
+[[dependencies.stalkermod]]
+modId="forge"
+mandatory=true
+versionRange="[43,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.stalkermod]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
